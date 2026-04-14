@@ -1,7 +1,19 @@
+import NU_Tote from '../assets/img/nu_totebag.jpg'
+import NU_Tumbler from '../assets/img/nu_tumbler.jpg'
+import NU_Mini_Light from '../assets/img/nu_minilight.jpg'
+import NU_Hoodie from '../assets/img/nu_hoodie.jpg'
+import NU_Sticker from '../assets/img/nu_sticker.png'
+import NU_ID from '../assets/img/nu_id.jpg'
+import NU_Pins from '../assets/img/nu_pins.jpg'
+import NU_Jersey from '../assets/img/nu_jersey.jpg'
+
+
 const products = [
   {
     name: 'campus-tote-bag',
     title: 'Campus Tote Bag',
+    image: NU_Tote,
+    imageName: 'nu_totebag.jpg',
     category: 'Bags',
     price: 'PHP 499',
     stock: 'In stock',
@@ -12,20 +24,25 @@ const products = [
     ],
   },
   {
-    name: 'daily-notes-pack',
-    title: 'Daily Notes Pack',
-    category: 'Stationery',
-    price: 'PHP 249',
+    name: 'National University Official Jersey',
+    title: 'National University Official Jersey',
+    image: NU_Jersey,
+    imageName: 'nu_jersey.jpg',
+    category: 'Apparel',
+    price: 'PHP 599',
     stock: 'In stock',
     content: [
-      'A practical bundle of notebooks, sticky notes, and quick-label tabs for daily class work.',
-      'The set is light, compact, and easy to keep inside a backpack or locker.',
-      'Useful for lectures, reminders, project lists, and exam review schedules.',
+      'A comfortable and stylish jersey for showing your school spirit.',
+      'Made with soft fabric for all-day wear during games and events.',
+      'Available in multiple colors and sizes for a perfect fit.'
+
     ],
   },
   {
     name: 'stainless-tumbler',
     title: 'Stainless Tumbler',
+    image: NU_Tumbler,
+    imageName: 'nu_tumbler.jpg',
     category: 'Drinkware',
     price: 'PHP 599',
     stock: 'Low stock',
@@ -36,20 +53,25 @@ const products = [
     ],
   },
   {
-    name: 'wireless-study-lamp',
-    title: 'Wireless Study Lamp',
+    name: 'wireless-mini-light',
+    title: 'Wireless Mini Light',
+    image: NU_Mini_Light,
+    imageName: 'nu_minilight.jpg',
     category: 'Tech',
-    price: 'PHP 899',
+    price: 'PHP 199',
     stock: 'In stock',
     content: [
-      'A compact rechargeable lamp for dorm desks, night study sessions, and small workspaces.',
-      'It has three brightness levels and a foldable body that stores neatly after use.',
-      'Good for reading, writing, and focused desk work without taking too much space.',
+      'A compact and lightweight light for dorm rooms, study spaces, or outdoor activities.',
+      'Equipped with a rechargeable battery and adjustable brightness settings.',
+      'Ideal for reading, writing, and focused desk work without taking too much space.'
+
     ],
   },
   {
     name: 'hoodie-jacket',
     title: 'Hoodie Jacket',
+    image: NU_Hoodie,
+    imageName: 'nu_hoodie.jpg',
     category: 'Apparel',
     price: 'PHP 1,199',
     stock: 'Preorder',
@@ -60,20 +82,22 @@ const products = [
     ],
   },
   {
-    name: 'desk-organizer-kit',
-    title: 'Desk Organizer Kit',
-    category: 'Workspace',
-    price: 'PHP 349',
+    name: 'Sticker pack',
+    title: 'Sticker Pack',
+    image: NU_Sticker,
+    imageName: 'nu_sticker.png',
+    category: 'Accessories',
+    price: 'PHP 199',
     stock: 'In stock',
     content: [
-      'A small organizer set for pens, clips, cables, cards, and other desk essentials.',
-      'The modular pieces can be arranged based on your study area or dorm table.',
-      'Keeps daily tools visible without adding clutter.',
+      'A set of fun and colorful stickers for personalizing laptops, notebooks, and more.', 
     ],
   },
   {
     name: 'id-lanyard-set',
     title: 'ID Lanyard Set',
+    image: NU_ID,
+    imageName: 'nu_id.jpg',
     category: 'Accessories',
     price: 'PHP 179',
     stock: 'In stock',
@@ -84,8 +108,10 @@ const products = [
     ],
   },
   {
-    name: 'exam-week-care-pack',
-    title: 'Exam Week Care Pack',
+    name: 'pins-and-patches-bundle',
+    title: 'Pins and Patches Bundle',
+    image: NU_Pins,
+    imageName: 'nu_pins.jpg',
     category: 'Bundles',
     price: 'PHP 399',
     stock: 'In stock',

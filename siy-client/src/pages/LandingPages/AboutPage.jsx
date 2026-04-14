@@ -1,5 +1,9 @@
 import Button from '../../components/Button';
-import logo from '../../assets/img/nubdexchange_logo.png';
+import NU_main from '../../assets/img/nu_main.jpg';
+import NU_Sticker from '../../assets/img/nu_sticker.png'
+import NU_ID from '../../assets/img/nu_id.jpg'
+import NU_Pins from '../../assets/img/nu_pins.jpg'
+import NU_Jersey from '../../assets/img/nu_jersey.jpg'
 
 const AboutPage = () => {
   return (
@@ -7,9 +11,7 @@ const AboutPage = () => {
       <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           <div className="rounded-3xl border-2 border-dashed border-zinc-300 bg-zinc-100 p-6">
-            <div className="flex min-h-72 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-              <img src={logo} alt="BulldogEx" className="h-32 w-32 rounded-full border-2 border-zinc-900 bg-zinc-50 object-contain" />
-            </div>
+            <img src={NU_main} alt="BulldogEx" className="h-full w-full border-1 border-zinc-900 bg-zinc-50 " />
           </div>
 
           <div>
@@ -106,17 +108,21 @@ const AboutPage = () => {
               Category Grid
             </p>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200 overflow-hidden">
+                <img
+                  src={NU_Sticker}
+                  alt="NU Sticker"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200 overflow-hidden">
+                <img src={NU_ID} alt="NU ID" className="w-full h-full object-cover" />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200 overflow-hidden">
+                <img src={NU_Pins} alt="NU Pins" className="w-fulll h-full object-cover" />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200 overflow-hidden">
+                <img src={NU_Jersey} alt="NU Jersey" className="w-full h-full object-cover" />
               </div>
             </div>
             <Button to="/products" className="mt-5">View Products</Button>
